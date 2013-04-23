@@ -48,7 +48,7 @@ dotjs_github.init = function() {
 
 	$('body').append( style );
 
-	$('.sidebar .filter-item').live('click.dotjs_github', function( e ) {
+	$('.sidebar .filter-item').on('click', '.dotjs_github', function( e ) {
 		e.preventDefault();
 		setTimeout( function() {
 			dotjs_github.$issues = $('.issue-list-group');
